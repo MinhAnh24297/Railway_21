@@ -127,25 +127,25 @@ VALUES
 INSERT INTO `Account`
 			(Email, User_name, Full_Name, DepartmentID, PositionID, CreateDate) -- Nếu không có CreateDate ở đây thì auto là now()
 VALUES
-			('abc@gmail.com', 'm.a123', N'Nguyễn Minh Anh', 1, 4, '2019-09-15'),
-            ('def@gmail.com', 'm.a456', N'Nguyễn Mai Anh', 2, 3, '2020-03-11'),
-            ('ghi@gmail.com', 'p.a123', N'Nguyễn Phương Anh', 3, 2, DEFAULT),
-            ('jkl@gmail.com', 't.a123', N'Nguyễn Thảo Anh', 4, 1, DEFAULT),
-            ('lxt@gmail.com', 'lxt123', N'Lương Xuân Trường', 5, 1, DEFAULT),
-            ('mna@gmail.com', 'nma123', N'Nguyễn Minh Anh', 3, 2, DEFAULT),
-            ('vvt@gmail.com', 'vvt123', N'Vũ Văn Thanh', 1, 3, DEFAULT),
-            ('nvt@gmail.com', 'nvt123', N'Nguyễn Việt Thanh', 2, 4, DEFAULT),
-            ('mno@gmail.com', 'nan123', N'Nguyễn Ánh Ngọc', 3, 3, DEFAULT);
+			('abc@gmail.com'		,		'm.a123'		,		N'Nguyễn Minh Anh'		,		1		,		4		,		'2019-09-15'),
+            ('def@gmail.com'		,		'm.a456'		,		N'Nguyễn Mai Anh'		,		2		,		3		,		'2020-03-11'),
+            ('ghi@gmail.com'		,		'p.a123'		,		N'Nguyễn Phương Anh'	,		3		,		2		,		DEFAULT),
+            ('jkl@gmail.com'		,		't.a123'		,		N'Nguyễn Thảo Anh'		,		4		,		1		,		DEFAULT),
+            ('lxt@gmail.com'		,		'lxt123'		,		N'Lương Xuân Trường'	,		5		,		1		,		DEFAULT),
+            ('mna@gmail.com'		,		'nma123'		,		N'Nguyễn Minh Anh'		,		3		,		2		,		DEFAULT),
+            ('vvt@gmail.com'		,		'vvt123'		,		N'Vũ Văn Thanh'			,		1		,		3		,		DEFAULT),
+            ('nvt@gmail.com'		,		'nvt123'		,		N'Nguyễn Việt Thanh'	,		2		,		4		,		DEFAULT),
+            ('mno@gmail.com'		,		'nan123'		,		N'Nguyễn Ánh Ngọc'		,		3		,		3		,		DEFAULT);
             
 -- Insert data into table 4: Group
 INSERT INTO `Group`
 			(GroupName, Creator_Group_ID, CreateDate)
 VALUES
-			('Liverpool Uni', 1, '2019-10-15'),
-            ('Brighton Uni', 3, '2020-03-17'),
-            ('Latrobe Uni', 2, DEFAULT),
-            ('VTI Edu', 4, NULL),
-            ('CMC Global', 5, DEFAULT);
+			('Liverpool University'		,		1		,		'2019-10-15'),
+            ('Brighton University'		,		3		,		'2020-03-17'),
+            ('Latrobe University'		,		2		,		DEFAULT),
+            ('VTI Education'			,		4		,		NULL),
+            ('CMC Global'				,		5		,		DEFAULT);
 
 -- Insert data into table 5: Group Account
 INSERT INTO GroupAccount
@@ -178,36 +178,36 @@ VALUES
 INSERT INTO Question
 			(Content, CategoryID, TypeID, Creator_Question_ID)
 VALUES
-			(N'Câu_hỏi_Java?', 1, 1, 1), 
-            (N'Câu_hỏi_.NET?', 2, 2, 3),
-            (N'Câu_hỏi_SQL?', 3, 1, 5),
-            (N'Câu_hỏi_Python?', 4, 2, 7),
-            (N'Câu_hỏi_C#?', 5, 2, 9);
+			(N'Câu_hỏi_Java?'		,		1		,		1		,		1), 
+            (N'Câu_hỏi_.NET?'		,		2		,		2		,		3),
+            (N'Câu_hỏi_SQL?'		,		3		,		1		,		5),
+            (N'Câu_hỏi_Python?'		,		4		,		2		,		7),
+            (N'Câu_hỏi_C#?'			,		5		,		2		,		9);
 
 -- Insert data into table 9: Answer
 INSERT INTO Answer
 			(Content, QuestionID, isCorrect)
 VALUES
-			(N'Câu_trả_lời_Java', 1, 1),
-            (N'Câu_trả_lời_Java_sai', 1, 0), 
-            (N'Câu_trả_lời_.NET', 2, 1), 
-            (N'Câu_trả_lời_.NET_sai', 2, 0),
-            (N'Câu_trả_lời_SQL', 3, 1), 
-            (N'Câu_trả_lời_SQL_sai', 3, 0), 
-            (N'Câu_trả_lời_Python', 4, 1), 
-            (N'Câu_trả_lời_Python_sai', 4, 0), 
-            (N'Câu_trả_lời_C#', 5, 1), 
-            (N'Câu_trả_lời_C#_sai', 5, 0);
+			(N'Câu_trả_lời_Java'			,		1		,		1),
+            (N'Câu_trả_lời_Java_sai'		,		1		,		0), 
+            (N'Câu_trả_lời_.NET'			,		2		,		1), 
+            (N'Câu_trả_lời_.NET_sai'		,		2		,		0),
+            (N'Câu_trả_lời_SQL'				,		3		,		1), 
+            (N'Câu_trả_lời_SQL_sai'			,		3		,		0), 
+            (N'Câu_trả_lời_Python'			,		4		,		1), 
+            (N'Câu_trả_lời_Python_sai'		,		4		,		0), 
+            (N'Câu_trả_lời_C#'				,		5		,		1), 
+            (N'Câu_trả_lời_C#_sai'			,		5		,		0);
 
 -- Insert data into table 10: Exam
 INSERT INTO Exam
 			(`Code`, Title, CategoryID, Duration, Creator_Exam_ID)
 VALUES
-			('VTI123', 'mySQL Query', 1, 60, 6), 
-            ('VTI456', 'demo Ruby', 2, 90, 8),
-            ('VTI789', 'demo Python', 3, 120, 2),
-            ('VTI242', 'demo Java', 4, 45, 1),
-            ('VTI137', 'demo HTML', 5, 15, 5);
+			('VTI123'		,		'mySQL Query'		,		1		,		60		,		6), 
+            ('VTI456'		,		'demo Ruby'			,		2		,		90		,		8),
+            ('VTI789'		,		'demo Python'		,		3		,		120		,		2),
+            ('VTI242'		,		'demo Java'			,		4		,		45		,		1),
+            ('VTI137'		,		'demo HTML'			,		5		,		15		,		5);
 
 -- Insert data into table 11: Exam Question
 INSERT INTO ExamQuestion
